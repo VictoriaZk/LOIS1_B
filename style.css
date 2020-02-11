@@ -1,0 +1,244 @@
+body {
+    background-color: white;
+}
+
+div.polaroid {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -10px;
+    box-shadow: 0 0 20px 4px #846c63;
+    text-align: center;
+    color: rgb(255,255,255);
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    background-color: white;
+    border-radius: 0px 0px 30px 30px;
+}
+
+#name {
+    border-radius: 0px 0px 30px 30px;
+}
+
+div.container {
+    padding: 10px;
+}
+
+header p {
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 0px;
+    font: 400 36.66667px Roboto;
+}
+
+header {
+    margin-bottom: 40px;
+    margin-top: 0%;
+}
+
+.content {
+    min-height: 80%;
+}
+
+.panel {
+    padding: 20px 10px 30px 10px;
+    margin-left: 7%;
+    margin-top: 7%;
+    width: 35%;
+    height: 40%;
+    background-color: white;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    transition:  box-shadow 0.35s;
+    color: white;
+    box-shadow: 0 0 20px 4px #846c63;
+}
+
+.panel-header {
+    font: 400 30px Roboto;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.content input[type=text]:focus:not([readonly]) {
+    border-bottom: black;
+    box-shadow: black;
+}
+
+.content input[type=text]:focus:not([readonly]) + label {
+    color: white;
+}
+
+.content .btn {
+    background-color: rgba(80, 27, 50, 0.7);
+    margin-left: 14%;
+    font-size: 20px;
+    width: 140px;
+    color: white;
+    text-shadow: 0 0 1px #FF0000, 0 0 2px #0000FF;
+    border: none;
+    box-shadow: 0 0 10px 4px #846c63;
+    text-align: center;
+}
+
+.content .btn:hover {
+    background-color: white;
+    color: rgba(80, 27, 50, 0.7);
+}
+
+.content .btn:active {
+    background-color: white;
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+}
+
+.group {
+    width: 100%;
+    height: 143px;
+    overflow: hidden;
+    position: relative;
+}
+
+label {
+    position: absolute;
+    top: 36.66667px;
+    color: white;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    font: 400 36.66667px Roboto;
+    cursor: text;
+    transition: .25s ease;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding-top: 36.66667px;
+    border: none;
+    border-radius: 0;
+    color: white;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    background: white;
+    box-shadow: 0 0 20px 4px #846c63;
+    font-size: 36.66667px;
+    transition: .3s ease;
+}
+input:valid ~ label {
+    top: 0;
+    font: 700 22px Roboto;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+input:focus {
+    outline: none;
+}
+input:focus ~ label {
+    top: 0;
+    font: 700 22px Roboto;
+    color: rgba(80, 27, 50, 0.7);
+}
+input:focus ~ .bar:before {
+    transform: translateX(0);
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #333 inset;
+    -webkit-text-fill-color: white !important;
+}
+
+.bar {
+    background: rgba(255, 226, 250, 0.15);
+    content: '';
+    width: 550px;
+    height: 3.66667px;
+    transition: .3s ease;
+    position: relative;
+}
+.bar:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    background: rgba(255, 226, 250, 0.1);
+    transform: translateX(-100%);
+}
+
+::selection {
+    background: rgba(80, 27, 50, 0.7);
+}
+
+
+.page-footer {
+    padding-top: 0px !important;
+    text-align: center;
+    color: rgb(255,255,255);
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    position:fixed;
+    bottom:0;
+    font: 400 20px Roboto;
+}
+
+td, th {
+    text-align: center !important;
+    font: 700 22px Roboto;
+    width: 250px;
+
+}
+
+table.bordered > tbody > tr {
+    border-bottom: 1px solid #f6f4f1 !important;
+    table-layout: fixed;
+}
+
+.table {
+    position: absolute;
+    overflow-y: auto;
+    left: 57%;
+    width: 34%;
+    height: 29%;
+    top: 19.7%;
+    background-color: white;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    transition:  box-shadow 0.35s;
+    font: 700 22px Roboto;
+    color: white;
+    box-shadow: 0 0 20px 4px #846c63;
+    padding: 25px 0px 25px 25px;
+}
+
+.truth-table {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+th {
+    width: 250px;
+}
+
+tbody {
+    overflow: scroll;
+    height: 100px;
+    position: relative !important;
+    top: 28px !important;
+}
+
+
+.result{
+    font: 700 22px Roboto;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    position: absolute;
+    padding: 40px 30px 40px 30px;
+    top: 35%;
+    background-color: rgb(80, 27, 50);
+    left: 33%;
+    box-shadow: 0 0 20px 4px #846c63;
+}
+
+
+#tests {
+    position: absolute;
+    top: 75%;
+    left: 5%;
+}
+
+#self {
+    position: absolute;
+    top: 75%;
+    left: 55%;
+}
